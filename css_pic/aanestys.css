@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Comic sans MS, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigointipalkki*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0;
+    color: #333;
+    padding: 1rem;
+}
+
+.navbar {
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links a {
+    color: #333;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    padding: 3px;
+    background-color: #0a0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Kyselylaatikoiden muotoilut */
+.poll-container, .admin-container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.poll-container h1, .admin-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.poll-container .poll-options, .admin-container .poll-options {
+    margin: 1rem 0;
+}
+
+.vote-btn, #add-poll-btn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.vote-btn:hover, #add-poll-btn:hover {
+    background-color: #0b0;
+    color: white
+}
+
+/* Login-/rekisteröinti-laatikot */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container form button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container form button:hover {
+    background-color: #0b0;
+    color: white;
+}
+
+.login-container p a {
+    text-decoration: none;
+    padding: 3px;
+    background-color: #0f0;
+    border-radius: 5px;
+}
+
+#register-message {
+    text-align: center;
+    color: #0a0;
+    font-size: 1.3em;
+}
+
+.existing-polls, .add-poll {
+    margin-top: 2rem;
+}
+
+.poll-item, .admin-poll-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.admin-poll-item button {
+    background-color: #f00;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.admin-poll-item button:hover {
+    background-color: #500;
+}
+
+
+@media only screen and (max-width:500px) {
+    .poll-container, .login-container, .admin-container {
+        width:80%;
+    }
+}

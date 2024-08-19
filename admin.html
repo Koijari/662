@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin hallintaruutu</title>
+    <link rel="favicon icon" href="css_pic/tag.png" type="image/x-icon">
+    <link rel="stylesheet" href="css_pic/aanestys.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="css_pic/quiz.png" alt="quiz" width="100">
+        </div>
+        <div class="nav-links">
+            <a href="#" id="logout-btn">Uloskirjaus</a>
+        </div>
+    </nav>
+
+    <div class="admin-container">
+        <h1>Admin hallintaruutu</h1>
+        <div class="add-poll">
+            <h3>Lisää uusi kysely</h3>
+            <input type="text" id="new-poll-question" placeholder="Kysymys"><br>
+            <div id="poll-options-container">
+                <input type="text" class="poll-option-input" placeholder="Vaihtoehto 1"><br>
+                <input type="text" class="poll-option-input" placeholder="Vaihtoehto 2"><br>
+            </div>
+            <button id="add-option-btn">Lisää vaihtoehto</button><br>
+            <button id="add-poll-btn">Lisää kysely</button>
+        </div>        
+
+        <div class="existing-polls">
+            <h3>Valmiit kyselyt</h3>
+            <div id="admin-poll-list"></div>
+        </div>
+    </div>
+
+    <script src="js/aanestys.js"></script>
+</body>
+</html>
